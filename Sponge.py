@@ -11,3 +11,6 @@ r = [-1, 1]
 for s, e in combinations(np.array(list(product(r, r, r))), 2):
     if np.sum(np.abs(s-e)) == r[1]-r[0]:
         ax.plot3D(*zip(s, e), color="b")
+
+
+mendelbrot(1,1)
